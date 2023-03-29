@@ -87,7 +87,7 @@ function produce(loader, request, callback, config) {
       return callback(e);
     }
     if (exports) {
-      const name = config.name;
+      const name = config?.name;
       if (name && name in exports) {
         exports = exports[name];
       }
